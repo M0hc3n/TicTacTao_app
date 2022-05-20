@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tic Tac Tao</string>
+
+    <string name="welcomeStr">Welcome to Tic Tac Tao Game !</string>
+    <string name="Ready">Ready to go ?</string>
+
+    <string name="play">Play</string>
+    <string name="lboard">Show Leader Board</string>
+    <string name="plyr1">Player 1</string>
+    <string name="plyr2">Player 2</string>
+    <string name="namesEnter">Please Enter Your Names</string>
+    <string name="plyBtn">Play !!</string>
+    <string name="empty"> </string>
+
+    <string name="T11">1</string>
+    <string name="T12">2</string>
+    <string name="T13">3</string>
+    <string name="T21">4</string>
+    <string name="T22">5</string>
+    <string name="T23">6</string>
+    <string name="T31">7</string>
+    <string name="T32">8</string>
+    <string name="T33">9</string>
+
+    <string name="PlayAgain">Play Again</string>
+    <string name="Home">Home</string>
+
+
+</resources>

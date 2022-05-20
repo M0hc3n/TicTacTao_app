@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:padding="20dp"
+    android:background="@color/Blue">
+
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="190dp"
+        android:layout_toEndOf="@+id/viewPlayer1"
+        android:layout_marginTop="72dp"
+        android:id="@+id/PlayAgainButton"
+        android:backgroundTint="@color/green"
+        android:text="@string/PlayAgain"
+        android:visibility="gone"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        android:onClick="playAgain"/>
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="190dp"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/viewPlayer2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/PlayAgainButton"
+        android:id="@+id/Homebutton"
+        android:backgroundTint="@color/Red"
+        android:text="@string/Home"
+        android:visibility="gone"
+        android:onClick="goHome"
+        android:layout_marginStart="40dp" />
+
+
+    <TextView
+        android:id="@+id/viewPlayer1"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/Blue"
+        android:text="@string/empty"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/Red"/>
+
+    <TextView
+        android:id="@+id/viewPlayer2"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/viewPlayer1"
+        android:layout_marginTop="50dp"
+        android:background="@color/Blue"
+        android:text="@string/empty"
+        android:textColor="#3C8AFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:id="@+id/gameTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewPlayer2"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/T11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T11"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+
+            <ImageButton
+                android:id="@+id/T12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T12"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="UsingOnClickInXml" />
+
+
+            <ImageButton
+                android:id="@+id/T13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T13"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/T21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T21"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+
+            <ImageButton
+                android:id="@+id/T22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T22"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="UsingOnClickInXml" />
+
+
+            <ImageButton
+                android:id="@+id/T23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T23"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/T31"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T31"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+
+            <ImageButton
+                android:id="@+id/T32"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T32"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                tools:ignore="UsingOnClickInXml" />
+
+
+            <ImageButton
+                android:id="@+id/T33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:contentDescription="@string/T33"
+                android:onClick="playClick"
+                android:padding="20dp"
+                android:scaleType="center"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

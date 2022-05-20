@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PlayersActivity"
+    android:padding="100dp"
+    android:background="@color/Blue">
+
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/namesEnter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Player1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:autofillHints="postalAddress"
+        android:hint="@string/plyr1"
+        android:inputType="textCapCharacters"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textColorHint="@color/white"
+        android:textStyle="italic" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Player2Name"
+        android:layout_below="@id/Player1Name"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:hint="@string/plyr2"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:autofillHints="postalAddress"
+        android:inputType="textCapCharacters"/>
+
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Player2Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:onClick="getNames"
+        android:text="@string/plyBtn"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        tools:ignore="UsingOnClickInXml" />
+
+</RelativeLayout>
